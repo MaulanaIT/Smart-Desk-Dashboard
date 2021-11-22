@@ -5,30 +5,41 @@ import logo from '../image/logo.png';
 
 import './Sidebar.css'
 
-export class Sidebar extends Component {
+const $ = require('jquery');
+
+interface props {
+    page: any;
+}
+
+export class Sidebar extends Component<props> {
+    
+    componentDidMount() {
+        $('#' + this.props.page).addClass('active');
+    }
+
     render() {
         return (
             <div className="sidebar">
                 <div>
                     <img src={logo} alt="Smart Desk" className="p-5" />
                 </div>
-                <div className="active menu">
-                    <div className="item gap-2">
+                <div id="dashboard" className="menu">
+                    <a href="/dashboard" className="item gap-2">
                         <div className="mark"></div>
                         <div className="align-items-center d-flex flex-row gap-2">
                             <IoGridOutline />
                             <span>Dashboard</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div className="menu">
-                    <div className="item gap-2">
+                <div id="retail-owner" className="menu">
+                    <a href="/retail-owner" className="item gap-2">
                         <div className="mark"></div>
                         <div className="align-items-center d-flex flex-row gap-2">
                             <IoPeopleOutline />
                             <span>Retail Owner</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div className="menu">
                     <div className="item gap-2">
