@@ -1,5 +1,7 @@
 .header {
     background: white;
-    color: black;
     height: 100px;
+    top: 0;
+    width: 100%;
+    z-index: 0;
 }

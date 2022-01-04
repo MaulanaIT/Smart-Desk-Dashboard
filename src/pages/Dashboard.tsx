@@ -1,23 +1,31 @@
 import React, { Component } from 'react'
-import Header from '../components/Header';
+import Header from '../components/Header'
+
+import './Dashboard.css';
 
 export class Dashboard extends Component {
     render() {
         return (
-            <div className="content">
+            <div className="container-content">
                 <Header />
-                <div>
-                    <p className="fw-bold text-black text-size-9">Dashboard</p>
-                    <div className="d-flex flex-row gap-4 pt-4">
-                        <div className="d-flex flex-column gap-4">
-                            <div className="card-content" style={{ width: '1050px', height: '365px' }}></div>
-                            <div className="card-content" style={{ width: '1050px', height: '435px' }}></div>
-                        </div>
-                        <div className="d-flex flex-column gap-4">
-                            <div className="card-content" style={{ width: '510px', height: '515px' }}></div>
-                            <div className="card-content" style={{ width: '510px', height: '285px' }}></div>
-                        </div>
+                <p className="fw-bold mb-0 text-black text-size-9">Dashboard</p>
+                <p className="text-black text-size-4">Dashboard</p>
+                <div className="gap-4 mx-0 row">
+                    <div className="card-container-content dashboard-container-sm">
+                        <p>Test</p>
                     </div>
+                    <div className="card-container-content dashboard-container-sm">
+                        <p>Test</p>
+                    </div>
+                    <div className="card-container-content dashboard-container-sm">
+                        <p>Test</p>
+                    </div>
+                    <div className="card-container-content col">
+                        <p>Test</p>
+                    </div>
+                </div>
+                <div className="card-container-content">
+                    <p>Test</p>
                 </div>
             </div>
         )

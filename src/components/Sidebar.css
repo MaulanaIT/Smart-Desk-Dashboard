@@ -21,15 +21,15 @@
 }
 
 .menu.active {
-    color: #16A59C;
+    color: #935541;
 }
 
 .menu.active .item {
-    color: #16A59C;
+    color: #935541;
 }
 
 .menu.active .item .mark {
-    background: #16A59C;
+    background: #935541;
 }
 
 .sidebar {

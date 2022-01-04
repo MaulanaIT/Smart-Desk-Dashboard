@@ -46,7 +46,7 @@ export class Sidebar extends Component<props> {
                         <div className="mark"></div>
                         <div className="align-items-center d-flex flex-row gap-2">
                             <IoBusinessOutline />
-                            <span>Dashboard</span>
+                            <span>Building</span>
                         </div>
                     </div>
                 </div>

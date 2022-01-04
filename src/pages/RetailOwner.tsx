@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Header from '../components/Header';
 
 const $ = require('jquery');
@@ -28,11 +27,12 @@ export class RetailOwner extends Component {
 
     render() {
         return (
-            <div className="content">
+            <div className="container-content">
                 <Header />
-                <div>
-                    <p className="fw-bold text-black text-size-9">Retail Owner</p>
-                    <div className="card-content p-4">
+                <div className="content">
+                    <p className="fw-bold mb-0 text-black text-size-9">Retail Owner</p>
+                    <p className="text-black text-size-4">Retail Owner</p>
+                    <div className="card-container-content p-4">
                         <div className="d-flex flex-row gap-2 text-nowrap pb-2">
                             <input type="text" id="search-data" name="search-data" className="form-control" style={{ borderRadius: '10px', width: '250px' }} placeholder="Search" />
                             <button className="border-radius-1 px-4 smart-desk-third-color text-size-4">Search</button>
